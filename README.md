@@ -5,8 +5,8 @@ Given a list of sequences, this script assess the presence of palindormes within
 
 Test use:
 
->$bash palindromes.sh motif_instances.txt
-
+>bash palindromes.sh motif_instances.txt
+>
 >Palindromic index for motif_instances.txt: 0.527083
 
 
