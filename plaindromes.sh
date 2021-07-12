@@ -36,4 +36,4 @@ rm -f $folder/seq_palindromes.txt
 done
 PI=`awk '{ sum += $1; n++ } END { if (n > 0) print sum / n}' $folder/palindromes_size.txt`
 
-echo "average palindromic index: $PI"
+echo "Palindromic Index for $file: $PI"
