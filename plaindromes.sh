@@ -2,7 +2,7 @@
 
 folder=.
 file=$1
-min=2
+min=2 #minimum palindormic length
 rm -f $folder/palindromes_size.txt 
 end1=$(wc -l $folder/$file   | awk '{print $1}')
 for ((r=1; $r<=$end1; r=$r+1)); do
