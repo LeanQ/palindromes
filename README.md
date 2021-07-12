@@ -5,4 +5,4 @@ Given a list of sequences, this script assess the presence of palindormes within
 
 use:
 
-bash palindrome_detection.sh 
+bash palindromes.sh motif_instances.txt
