@@ -1,11 +1,12 @@
 #!/bin/bash
 
 folder=.
+file=$1
 min=2
 rm -f $folder/palindromes_size.txt 
-end1=$(wc -l $folder/motif_instances.txt   | awk '{print $1}')
+end1=$(wc -l $folder/$file   | awk '{print $1}')
 for ((r=1; $r<=$end1; r=$r+1)); do
-seq=`sed -n "${r}p" $folder/motif_instances.txt  | awk '{print $1}'`
+seq=`sed -n "${r}p" $folder/$file  | awk '{print $1}'`
 seq_len=`echo $seq | wc | awk '{print $3-1}'`
 
 echo "0 0 $seq_len N" > $folder/seq_palindromes.txt
